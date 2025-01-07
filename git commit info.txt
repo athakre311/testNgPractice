@@ -1,0 +1,47 @@
+Admin@DESKTOP-MT8P8LQ MINGW64 ~/eclipse-workspace/testNgPractice (master)
+$ ^[[200~echo "# testNgPractice" >> README.md
+git branch -M main
+git remote add origin https://github.com/athakre311/testNgPractice.git
+git push -u origin mainbash: $'\E[200~echo': command not found
+
+Admin@DESKTOP-MT8P8LQ MINGW64 ~/eclipse-workspace/testNgPractice (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Admin/eclipse-workspace/testNg
+Practice/.git/
+
+Admin@DESKTOP-MT8P8LQ MINGW64 ~/eclipse-workspace/testNgPractice (master)
+$ git add README.md
+
+Admin@DESKTOP-MT8P8LQ MINGW64 ~/eclipse-workspace/testNgPractice (master)
+$ git commit -m "first commit"
+[master 9f40427] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+Admin@DESKTOP-MT8P8LQ MINGW64 ~/eclipse-workspace/testNgPractice (master)
+$ git branch -M main
+
+Admin@DESKTOP-MT8P8LQ MINGW64 ~/eclipse-workspace/testNgPractice (main)
+$ git remote add origin https://github.com/athakre311/testNgPractice.git
+
+Admin@DESKTOP-MT8P8LQ MINGW64 ~/eclipse-workspace/testNgPractice (main)
+$ git push -u origin main
+Enumerating objects: 129, done.
+Counting objects: 100% (129/129), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (113/113), done.
+Writing objects: 100% (129/129), 69.89 KiB | 550.00 KiB/s, done.
+Total 129 (delta 41), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (41/41), done.
+To https://github.com/athakre311/testNgPractice.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-MT8P8LQ MINGW64 ~/eclipse-workspace/testNgPractice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+
