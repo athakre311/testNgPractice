@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.qa.base.Base;
@@ -14,12 +15,11 @@ public class RegisterTest extends Base {
 	WebDriver driver;
 
 	@BeforeMethod
-	public void setup() {
-		driver = InisalizeBrowser();
-
+	@Parameters ("browser")
+	public void setup(String b) {
+		driver = InisalizeBrowser(b);
 	}
-
-//	@AfterMethod
+	@AfterMethod
 	public void tearDown() {
 		driver.close();
 	}
@@ -38,6 +38,9 @@ public class RegisterTest extends Base {
 
 		String msg11 = driver.findElement(By.xpath("//b[normalize-space()='Enter Account Information']")).getText();
 		Assert.assertEquals("ENTER ACCOUNT INFORMATION", msg11);
+		
+//		WebDriverWait wait = new WebDriverWait(driver, 10);
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));
 
 //		Step 09
 		driver.findElement(By.id("id_gender1")).click();

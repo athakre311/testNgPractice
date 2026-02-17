@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite2" parallel="suite">
+	<test name="Test2">
+		<parameter name="uname" value="test@test">
+		</parameter>
+		<parameter name="pass" value="12345"></parameter>
+
+		<groups>
+			<run>
+				<include name="smoke"/>
+				<include name="sanity"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.qa.testCases.TestNgAll" />
+			<class name="com.qa.testCases.TestNgAll2" />
+		</classes>
+	</test>
+</suite>
+
