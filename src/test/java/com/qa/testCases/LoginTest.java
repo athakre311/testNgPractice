@@ -46,4 +46,11 @@ public class LoginTest extends Base {
 		System.out.println("get Thread ID"+Thread.currentThread().getId());
 
 	}
+	
+	@Test(priority = 3)
+	public void loginWithNoCredentials01() {
+		System.out.println(">>>>>> LoginTest 003 <<<<<<<");
+		System.out.println("get Thread ID"+Thread.currentThread().getId());
+
+	}
 }
